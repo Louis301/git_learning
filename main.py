@@ -17,6 +17,8 @@ def quicksort(arr: list) -> list:
 	return quicksort(left) + middle + quicksort(right)
 
 # ===================================================
-list_ = [random.randint(1, 100) for _ in range(10)]
+max_n = 10
+
+list_ = [random.randint(1, 100) for _ in range(max_n)]
 
 print(quicksort(list_))
